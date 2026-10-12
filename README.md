@@ -92,6 +92,4 @@ push и pull request, а также собирает релизный `.exe`.
 ```
 
 ## Лицензия
-
-Не указана. Добавьте файл `LICENSE` (на GitHub: *Add file → Create new file →
-LICENSE → Choose a license template*).
+Проект распространяется под лицензией MIT, см. файл [LICENSE](LICENSE).
