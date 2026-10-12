@@ -1,0 +1,20 @@
+[package]
+name = "raskroy_trub"
+version = "0.1.0"
+edition = "2024"
+description = "Раскрой труб на хлысты 6000 мм по производственному графику (Excel) для станка лазерной резки"
+readme = "README.md"
+repository = "https://github.com/sliperly/raskroy_trub-rs"
+# license = "MIT"   # раскомментируйте после выбора лицензии и добавьте файл LICENSE
+publish = false     # не публиковать на crates.io случайно
+
+[dependencies]
+regex = "1.13.1"
+# Добавляйте по мере необходимости командами:
+#   cargo add calamine   (чтение .xlsx)
+#   cargo add fastrand   (случайный мультистарт)
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
